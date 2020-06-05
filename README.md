@@ -1,6 +1,8 @@
 ## Goal
 This is an app to teach how to attach photos to a model in Rails using `active_storage`.
 
+[Check my other demos](https://github.com/andrerferrer/dedemos/).
+
 ## How to
 ### 1. Install active_storage
 ```
