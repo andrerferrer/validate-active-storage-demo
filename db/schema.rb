@@ -38,10 +38,9 @@ ActiveRecord::Schema.define(version: 2020_06_04_235835) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
-    t.string "neighborhood"
+    t.string "address"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "city"
   end
 
   create_table "reviews", force: :cascade do |t|
