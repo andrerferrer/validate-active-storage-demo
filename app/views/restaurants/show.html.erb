@@ -1,4 +1,9 @@
 <h1><%= @restaurant.name %> <small><%= @restaurant.address %></small></h1>
+
+<% if @restaurant.photo.attached? %>
+  <%= image_tag @restaurant.photo %>
+<% end %>
+
 <h2>
   <%= pluralize @restaurant.reviews.size, "review" %>
 </h2>
