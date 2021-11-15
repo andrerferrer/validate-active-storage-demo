@@ -8,6 +8,8 @@ This demo was created from [this one](https://github.com/andrerferrer/basic-phot
 [Check my other demos](https://github.com/andrerferrer/dedemos/).
 
 ## How to
-### 1. Add custom validator
+### 1. Add [custom validator](/app/models/restaurant.rb)
+
+[To know more.](https://guides.rubyonrails.org/active_record_validations.html#custom-methods)
 
 Good luck, have fun!
