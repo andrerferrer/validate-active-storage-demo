@@ -3,14 +3,16 @@ Restaurant.destroy_all
 
 
 puts "Create a Restaurant"
-Restaurant.create! name: "McDonalds", address: "Gloria"
+mc_donalds = Restaurant.new name: "McDonalds", address: "Gloria"
 
 
 puts "Attach some photos"
 
 image_file = File.open('db/pictures/mcdonalds.jpg')
 
-Restaurant.first.photo.attach(io: image_file, filename: 'mcdonalds.jpg', content_type: 'image/jpg')
+mc_donalds.photo.attach(io: image_file, filename: 'mcdonalds.jpg', content_type: 'image/jpg')
+
+mc_donalds.save!
 
 puts "Done!"
 puts "Let's drink a beer"
